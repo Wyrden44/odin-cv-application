@@ -7,6 +7,38 @@
     font-size: 0.39cm;
 }
 
+@media screen and (max-width: 21cm) {
+    .cv {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: calc(21cm * 0.9)) {
+    .cv {
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: calc(21cm * 0.8)) {
+    .cv {
+        transform: scale(0.7);
+    }
+}
+
+
+@media screen and (max-width: calc(21cm * 0.7)) {
+    .cv {
+        transform: scale(0.6);
+    }
+}
+
+
+@media screen and (max-width: calc(21cm * 0.6)) {
+    .cv {
+        transform: scale(0.5);
+    }
+}
+
 #info {
     height: 25%;
     margin: 2cm 2.5cm 0 2cm;

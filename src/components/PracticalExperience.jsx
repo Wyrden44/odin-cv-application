@@ -2,13 +2,13 @@ import ExperienceBlock from "./experienceBlock";
 import { useState } from "react";
 import NewButton from "./newButton";
 
-export default function PracticalExperience({ convertCv }) {
+export default function PracticalExperience() {
     const [numBlocks, setNumBlocks] = useState(0);
     const [showButton, setShowButton] = useState(true);
 
     let experienceBlocks = []
     for (let i=0; i<numBlocks; i++) {
-        experienceBlocks.push(<ExperienceBlock  key={crypto.randomUUID()} convertCv={convertCv} />)
+        experienceBlocks.push(<ExperienceBlock  key={crypto.randomUUID()} />)
     }
 
     function updateNumBlocks() {

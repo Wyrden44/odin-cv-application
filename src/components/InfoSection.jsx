@@ -1,16 +1,16 @@
 import InputWithLabel from "./inputWithLabel";
 
-export default function InfoSection({ convertCv }) {
+export default function InfoSection() {
     return (
         <div className="section" id="info">
-            <InputWithLabel convertCv={convertCv} label="Name" name="name"/>
-            <InputWithLabel convertCv={convertCv} label="Birthday" name="birthday"/>
+            <InputWithLabel label="Name" name="name"/>
+            <InputWithLabel label="Birthday" name="birthday"/>
             <div className="address">
-                <InputWithLabel convertCv={convertCv} label="Address" name="address" placeholder="Street"/>
-                <InputWithLabel convertCv={convertCv} name="address" placeholder="City"/>
+                <InputWithLabel label="Address" name="address" placeholder="Street"/>
+                <InputWithLabel name="address" placeholder="City"/>
             </div>
-            <InputWithLabel convertCv={convertCv} label="Phone" name="phone"/>
-            <InputWithLabel convertCv={convertCv} label="email" name="email"/>
+            <InputWithLabel label="Phone" name="phone"/>
+            <InputWithLabel label="email" name="email"/>
         </div>
     )
 }
